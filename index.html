@@ -3,27 +3,175 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Homepage</title>
+  <title>Alexandre Matiello - Software Developer</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-  <header class="header">
-    <h1>Meu Nome</h1>
+  <header>
     <nav>
       <ul>
-        <li>Início</li>
-        <li>Projetos</li>
-        <li>Contato</li>
+        <li><a href="#">Início</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">Hero section</section>
-  <section class="projects">Projects section</section>
-  <section class="contact">Contact section</section>
+  <section class="section hero">
+    <div class="section-inner hero-content">
 
-  <footer class="footer">Footer</footer>
+      <div class="hero-text">
+        <h1>Alexandre Matiello</h1>
+        <p>Software Developer • Criando experiências digitais modernas e eficientes.</p>
+      </div>
 
+      <div class="hero-photo">
+        <img src="assets/img/me.jpeg" alt="Foto de perfil">
+      </div>
+
+    </div>
+  </section>
+
+    <!-- =====================
+    PROJECTS SECTION
+    ====================== -->
+    <section id="projects" class="section">
+    <div class="section-inner">
+
+        <h2 class="section-title fade-up">Projetos</h2>
+
+        <div class="projects-grid">
+
+        <!-- CARD 1 -->
+        <article class="project-card fade-up">
+            <div class="project-header">
+            <h3>GameMatch</h3>
+            <a href="#" class="project-link">
+                <span class="material-icons">open_in_new</span>
+            </a>
+            </div>
+
+            <p class="project-description">
+            Plataforma social para encontrar jogadores compatíveis, enviar pedidos de amizade e organizar partidas online.
+            </p>
+
+            <div class="project-tags">
+            <span class="tag">Java</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Swing</span>
+            </div>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="project-card fade-up">
+            <div class="project-header">
+            <h3>Notes App</h3>
+            <a href="#" class="project-link">
+                <span class="material-icons">open_in_new</span>
+            </a>
+            </div>
+
+            <p class="project-description">
+            Aplicação completa seguindo o Full Stack Open, com backend em Node e frontend React consumindo API REST.
+            </p>
+
+            <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+            </div>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="project-card fade-up">
+            <div class="project-header">
+            <h3>Phonebook</h3>
+            <a href="#" class="project-link">
+                <span class="material-icons">open_in_new</span>
+            </a>
+            </div>
+
+            <p class="project-description">
+            Agenda telefônica com CRUD completo, validações e deploy no Render com frontend integrado.
+            </p>
+
+            <div class="project-tags">
+            <span class="tag">Express</span>
+            <span class="tag">React</span>
+            <span class="tag">REST API</span>
+            </div>
+        </article>
+
+        </div>
+    </div>
+    </section>
+
+    <!-- =====================
+        CONTACT SECTION
+    ====================== -->
+    <section id="contact" class="section">
+    <div class="section-inner">
+
+        <h2 class="section-title fade-up">Contato</h2>
+
+        <div class="contact-grid">
+
+        <!-- CONTATO DIRETO -->
+        <div class="contact-card">
+            <h3>Fale comigo</h3>
+            
+            <div class="contact-item">
+            <span class="material-icons">email</span>
+            <a href="mailto:alexandrematiellokf@gmail.com">
+                alexandrematiellokf@gmail.com
+            </a>
+            </div>
+
+            <div class="contact-item">
+            <span class="material-icons">phone</span>
+            <a href="tel: +55 011 97374-045">
+                +55 011 97374-045
+            </a>
+            </div>
+        </div>
+
+        <!-- REDES DEV -->
+        <div class="contact-card">
+            <h3>Redes Profissionais</h3>
+
+            <div class="social-links">
+            <a href="#" class="social-link">
+                <i class="devicon-github-original"></i> GitHub
+            </a>
+
+            <a href="#" class="social-link">
+                <i class="devicon-linkedin-plain"></i> LinkedIn
+            </a>
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+    </section>
+
+    <!-- =====================
+        FOOTER
+    ====================== -->
+    <footer class="footer">
+    <div class="footer-inner">
+
+        <p class="footer-text">
+        © <span id="year"></span> Alexandre Matiello — Software Developer
+        </p>
+
+    </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
